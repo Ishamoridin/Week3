@@ -1,20 +1,20 @@
-let boom = new Audio("drumkit/boom.wav")
+let boom = new Audio("./boom.wav")
 let boomBtn = document.getElementById(`boomButton`)
-let clap = new Audio("drumkit/clap.wav")
+let clap = new Audio("./clap.wav")
 let clapBtn = document.getElementById(`clapButton`)
-let hihat = new Audio ("drumkit/hihat.wav")
+let hihat = new Audio ("./hihat.wav")
 let hihatBtn = document.getElementById(`hihatButton`)
-let kick = new Audio ("drumkit/kick.wav")
+let kick = new Audio ("./kick.wav")
 let kickBtn = document.getElementById(`kickButton`)
-let openhat = new Audio ("drumkit/openhat.wav")
+let openhat = new Audio ("./openhat.wav")
 let openhatBtn = document.getElementById(`openhatButton`)
-let ride = new Audio ("drumkit/ride.wav")
+let ride = new Audio ("./ride.wav")
 let rideBtn = document.getElementById(`rideButton`)
-let snare = new Audio ("drumkit/snare.wav")
+let snare = new Audio ("./snare.wav")
 let snareBtn = document.getElementById(`rideButton`)
-let tink = new Audio ("drumkit/tink.wav")
+let tink = new Audio ("./tink.wav")
 let tinkBtn = document.getElementById(`tinkButton`)
-let tom = new Audio ("drumkit/tom.wav")
+let tom = new Audio ("./tom.wav")
 let tomBtn = document.getElementById(`tomButton`)
 let gameHdr = document.getElementById(`gameHeader`)
 let drumHstry = document.getElementById(`drumHistory`)
@@ -29,20 +29,20 @@ function headerColorCycle(){
         if (gameHdr.style.color==colorArray[i]) gameHdr.style.color=colorArray[(i+1)%(colorArray.length-1)];break;
     }}
 
-function replayDrums(playlist){
-    for (let i=0;i<playlist.length;i++){
-        switch (playlist.charAt(i)){
-            case `1`:setTimeout(playAudio(boom), 500);break;
-            case `2`:setTimeout(playAudio(clap), 500);break;
-            case `3`:setTimeout(playAudio(hihat), 500);break;
-            case `4`:setTimeout(playAudio(kick), 500);break;
-            case `5`:setTimeout(playAudio(openhat), 500);break;
-            case `6`:setTimeout(playAudio(ride), 500);break;
-            case `7`:setTimeout(playAudio(snare), 500);break;
-            case `8`:setTimeout(playAudio(tink), 500);break;
-            case `9`:setTimeout(playAudio(tom), 500);break;
-            default:break;
-        }}};
+// function replayDrums(playlist){
+//     for (let i=0;i<playlist.length;i++){
+//         switch (playlist.charAt(i)){
+//             case `1`:setTimeout(playAudio(boom), 500);break;
+//             case `2`:setTimeout(playAudio(clap), 500);break;
+//             case `3`:setTimeout(playAudio(hihat), 500);break;
+//             case `4`:setTimeout(playAudio(kick), 500);break;
+//             case `5`:setTimeout(playAudio(openhat), 500);break;
+//             case `6`:setTimeout(playAudio(ride), 500);break;
+//             case `7`:setTimeout(playAudio(snare), 500);break;
+//             case `8`:setTimeout(playAudio(tink), 500);break;
+//             case `9`:setTimeout(playAudio(tom), 500);break;
+//             default:break;
+//         }}};
 
 document.addEventListener(`click`, (ev) => {
     console.log(ev.target.id)
